@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="bg-slate-900 w-[100vw] min-h-[100vh]">
       <Nav />
-      <div className="flex w-[65vw] flex-col  mx-auto">
+      <div className="flex w-[80vw] lg:w-[65vw] flex-col  mx-auto">
         <Filter data={data}  category = {category} setCategory={setCategory}/>
         {loading? (<Spinner/>):(<Cards coursesData={courses} category={category}/>)}
       </div>
