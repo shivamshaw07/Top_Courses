@@ -30,7 +30,7 @@ const Card = (props) => {
     <div className="flex flex-col w-[100%] h-[50vh] items-center  bg-slate-950 text-white rounded-md">
       <div className="relative w-[100%]">
         <img src={props.course.image.url} className="w-[100%] h-[22vh] rounded-md" />
-        <button className="absolute top-[19vh] left-[20rem] bg-white p-2 rounded-full" onClick={likeHandler}>
+        <button className="absolute top-[19vh] right-[3vw] bg-white p-2 rounded-full" onClick={likeHandler}>
           {
             !like ? <FcLikePlaceholder/> : <FcLike/>
           }
